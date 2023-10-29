@@ -1,8 +1,8 @@
 // Function to remove duplicate elements from an array.
 function removeDuplicates(arr) {
 	// return [...new Set(arr.map(item => item.toLowerCase()))];
-	const filteredItemsSet = new Set(arr.map(item => item.toLowerCase()));
-	return Array.from(filteredItemsSet);
+	const nonDuplicatesSet = new Set(arr.map(item => item.toLowerCase()));
+	return Array.from(nonDuplicatesSet);
 }
 
 // Example of using the function.
